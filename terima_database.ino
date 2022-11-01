@@ -16,7 +16,7 @@ void setup() {
   pinMode(led, OUTPUT);
 
   // Setting WiFi
-  WiFi.hostname("Sensor Gas");
+  WiFi.hostname("Aktuator Gas");
   WiFi.begin(ssid, password);
 }
 
