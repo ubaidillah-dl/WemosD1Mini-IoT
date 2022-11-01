@@ -33,7 +33,7 @@ void loop() {
   // Cek koneksi ke server
   WiFiClient client;
   if(!client.connect(host,port)){
-    Serial.print("Menyambung ke ");
+    Serial.print("Menyambungkan ke ");
     Serial.println(host);
     return;
   }else{
