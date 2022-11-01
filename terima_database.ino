@@ -65,12 +65,13 @@ void loop() {
     Serial.print("Intensitas gas ");
     Serial.println(intensitas);
 
-    // Indikator Terhubung ke host
+    // Indikator terhubung ke host
     digitalWrite(LED_BUILTIN, LOW);
     delay(50);
     digitalWrite(LED_BUILTIN, HIGH);
     delay(100);
-
+    
+    // Pengkondisian output
     if(intensitas>=250){
       Serial.println("Lampu hidup");
       digitalWrite(led, HIGH);
